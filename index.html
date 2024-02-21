@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spoongame</title>
+    <style>
+        .back{
+           background-image: url("https://img.freepik.com/free-photo/field-covered-greenery-near-road-sunlight_181624-5708.jpg?w=996&t=st=1708319762~exp=1708320362~hmac=069b25b625a05a4054d05aff4f1ee0a1dbbeb8883653ec119da3f152c8ea22c2");
+           background-size: cover;
+           height: 150vh;
+          
+        }
+        .line{
+            border: 1px solid white;
+        }
+        img{
+            width: 150px;
+            display: block;
+        }
+        .pic{
+            width: 70px;
+            height: 100px;
+           margin-left: 1400px;
+           padding-top: 20px;
+
+        }
+        input:checked~.pic1{
+            transform:translate(1330px);
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+
+        }
+        input:checked~.pic2{
+            transform:translate(1230px);
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+
+        }
+        input:checked~.pic3{
+            transform:translate(1230px);
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transform: rotate(360deg) translate(400px);
+        }
+        input:checked~.pic4{
+            transform:translate(1330px);
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="back">
+        <div>
+            <img src="../assets/images/empire.jpg" class="pic"/>
+        </div>
+        <div class="line">
+            <input type="radio"/>
+            
+                <img src="https://media.baamboozle.com/uploads/images/46306/1616613230_64462.gif" class="pic1"/>
+                <img src="https://media.baamboozle.com/uploads/images/46306/1616613230_64462.gif" class="pic2"/>
+                <img src="https://media.baamboozle.com/uploads/images/46306/1616613230_64462.gif" class="pic3"/>
+                <img src="https://media.baamboozle.com/uploads/images/46306/1616613230_64462.gif" class="pic4"/>
+        </div>
+    </div>
+</body>
+</html>
